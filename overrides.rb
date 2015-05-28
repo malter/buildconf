@@ -4,7 +4,8 @@
 # Uncomment to reenable building the RTT test suite
 # This is disabled by default as it requires a lot of time and memory
 #
-# Autobuild::Package['rtt'].define "BUILD_TESTING", "ON"
+Autobuild::Package['rtt'].define "USE_CPP11", "ON"
+Autobuild::Package['typelib'].define "BUILD_CLANG_TLB_IMPORTER", "ON"
 
 # Package specific prefix:
 # Autobuild::Package['rtt'].prefix='/opt/autoproj/2.0'

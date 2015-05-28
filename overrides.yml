@@ -3,18 +3,18 @@
 # package
 #
 overrides:
-   - rtt
+   - rtt:
      github: malter/rtt
      branch: clang-boost
-   - gui/vizkit
+   - gui/vizkit:
      github: malter/gui-vizkit
-   - drivers/iodrivers_base
+   - drivers/iodrivers_base:
      github: malter/drivers-iodrivers_base
-   - orogen
+   - orogen:
      github: malter/orogen
-   - typelib
+   - typelib:
      github: malter/typelib
-   - base/orogen/types
+   - base/orogen/types:
      github: malter/base-orogen-types
-   - base/cmake
-     github: malter/base/cmake
+   - base/cmake:
+     github: malter/base-cmake
