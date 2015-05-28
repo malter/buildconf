@@ -25,7 +25,7 @@
 
 if Autobuild.macos?
 env_set 'TYPELIB_CXX_LOADER', "clang"
-env_set 'BOOST_DIR', "-I/opt/local"
+env_set 'BOOST_DIR', "/opt/local"
 env_set 'CXXFLAGS', "-I/opt/local/include"
 env_set 'LDFLAGS', "-undefined dynamic_lookup"
 end
