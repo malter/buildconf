@@ -23,3 +23,5 @@ overrides:
      github: malter/tools-pocolog_cpp
    - tools/orocos.rb:
      branch: osx
+   - gui/vizkit3d:
+     github: malter/gui-vizkit3d
