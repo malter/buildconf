@@ -14,7 +14,12 @@ overrides:
      github: malter/orogen
    - typelib:
      github: malter/typelib
+     branch: apple
    - base/orogen/types:
      github: malter/base-orogen-types
    - base/cmake:
      github: malter/base-cmake
+   - tools/pocolog_cpp:
+     github: malter/tools-pocolog_cpp
+   - tools/orocos.rb:
+     branch: osx
