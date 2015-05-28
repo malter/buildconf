@@ -53,7 +53,9 @@ layout:
 # all packages but a few ones. As with layout, the names are actually regular
 # expressions.
 #
-# exclude_packages:
+exclude_packages:
+  - gui/vizkit3d
+  - gui/rock_widget_collection
 #   - orocos/
 
 # Ignoring packages: same principle than package exclusion, but this time the
@@ -63,8 +65,8 @@ layout:
 # For instance, let's assume the orocos/rtt is already installed on your
 # machine. You would then simply do:
 #
-# ignored_packages:
-#   - rtt
+#ignored_packages:
+#  - rtt
 #
 
 

@@ -2,7 +2,19 @@
 # in the package sets. Below is an example to change the branch name for a given
 # package
 #
-# overrides:
-#   - rtt
-#     branch: test
-#  
+overrides:
+   - rtt
+     github: malter/rtt
+     branch: clang-boost
+   - gui/vizkit
+     github: malter/gui-vizkit
+   - drivers/iodrivers_base
+     github: malter/drivers-iodrivers_base
+   - orogen
+     github: malter/orogen
+   - typelib
+     github: malter/typelib
+   - base/orogen/types
+     github: malter/base-orogen-types
+   - base/cmake
+     github: malter/base/cmake

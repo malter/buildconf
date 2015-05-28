@@ -23,6 +23,13 @@
 # NOTE: Variables set like this are exported in the generated 'env.sh' script.
 #
 
+if Autobuild.macos?
+env_set 'TYPELIB_CXX_LOADER', "clang"
+env_set 'BOOST_DIR', "-I/opt/local"
+env_set 'CXXFLAGS', "-I/opt/local/include"
+env_set 'LDFLAGS', "-undefined dynamic_lookup"
+end
+
 require 'autoproj/gitorious'
 Autoproj.gitorious_server_configuration('GITORIOUS', 'gitorious.org')
 Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
