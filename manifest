@@ -65,7 +65,6 @@ layout:
 #
 ignored_packages:
   - gui/vizkit3d
-  - gui/rock_widget_collection
 #  - rtt
 #
 
