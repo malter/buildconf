@@ -1,3 +1,25 @@
+Before using bootstrap you have to install clang manually by performing the
+following steps in you empty dev folder:
+
+  mkdir external
+  cd external
+  svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_34/final/ llvm
+  cd llvm/tools
+  svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_34/final/ clang
+  cd ..
+  mkdir build
+  cd build
+  ../configure --prefix=$PWD/../../../install --enable-optimized
+  make -j4 REQUIRES_RTTI=1
+  make install
+
+Afterwards you start the rock installation:
+
+wget http://rock-robotics.org/autoproj_bootstrap
+ruby autoproj_bootstrap git https://github.com/malter/buildconf.git
+
+and choose macosx as rtt target.
+
 
              Configuration of your autoproj build
 
