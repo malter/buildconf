@@ -20,6 +20,10 @@ ruby autoproj_bootstrap git https://github.com/malter/buildconf.git
 
 and choose macosx as rtt target.
 
+Currently not all libraries are installed with the correct rpath on OS X.
+To run rock-display for example you need to export the following path:
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/your_dev_folder/install/lib/orocos:/your_dev_folder/install/lib/orocos/types:/your_dev_folder/install/lib/typelib:/your_dev_folder/install/lib"
+
 
              Configuration of your autoproj build
 
